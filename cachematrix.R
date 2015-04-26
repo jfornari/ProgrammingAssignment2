@@ -49,10 +49,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Solve the inverse of a cache matrix
+## Solve the inverse of a cache matrix and return the inverse matrix
 
 cacheSolve <- function(x, ...) {
-    ## Return a matrix that is the inverse of 'x'
     datos <- x$getsolve()
     if(!is.null(datos)) {
       message("searching the data cache")
